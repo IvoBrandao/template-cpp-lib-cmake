@@ -1,6 +1,6 @@
 set(LIB_NAME Mylib)
 set(SUBMODULE_TESTS_NAME ${LIB_NAME}_tests)
-set(SUBMODULE_TESTS_DEPS ${LIB_NAME}_shared) # alternativly test the static library
+set(SUBMODULE_TESTS_DEPS ${LIB_NAME})
 
 
 set(SUBMODULE_TESTS_MOCK_INC_DIR ${CMAKE_CURRENT_LIST_DIR}/mocks/include)
@@ -48,3 +48,4 @@ gtest_add_tests(TARGET      ${SUBMODULE_TESTS_NAME}
 # Add tests using CTest (optional)
 add_test(NAME ${SUBMODULE_TESTS_NAME} COMMAND ${SUBMODULE_TESTS_NAME})
 gtest_discover_tests(${SUBMODULE_TESTS_NAME})
+

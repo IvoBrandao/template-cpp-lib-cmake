@@ -35,7 +35,7 @@ target_include_directories(${APP_NAME}
 PRIVATE ${CMAKE_CURRENT_LIST_DIR}/include)
 
 # link the library to the executable
-target_link_libraries(${APP_NAME} Mylib_shared)
+target_link_libraries(${APP_NAME} Mylib)
 
 # Testing
 enable_testing()

@@ -4,7 +4,7 @@
 
 int main() {
 
-    int result = mylib::add(1,2);
+    int result = MyLibInterface::add(1,2);
 
     std::cout << "result: " << result << std::endl;
     return 0;

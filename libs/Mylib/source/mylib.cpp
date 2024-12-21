@@ -1,14 +1,14 @@
 #include "mylib.hpp"
+#include "mylib_prv.hpp"
 
 
+namespace MyLibInterface
+{
 
-namespace mylib{
 
+int add(int a, int b){
 
-  int add(int a, int b){
-    return (a + b);
-
-  }
-
+  return MyLib::add(a,b);
+}
 
 }

@@ -1,7 +1,7 @@
 #include "gtest/gtest.h"
 #include "mylib.hpp"
 
-namespace mylib {
+namespace MyLibInterface {
 
 // Test case for the add function
 TEST(AddFunctionTest, PositiveNumbers) {
